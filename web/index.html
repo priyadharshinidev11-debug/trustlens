@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrustLens: check it before you trust it</title>
+  <meta name="description" content="Paste a link, message, UPI ID, phone number or QR code and see exactly why it is safe or a scam.">
+  <meta name="theme-color" content="#101B33">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="TrustLens home">
+      <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="9" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M10 14.2l3 3 5.4-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21l7 7" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/></svg>
+      <span>TrustLens</span>
+    </a>
+    <nav id="nav" aria-label="Main"></nav>
+    <div id="account" class="account"></div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="foot">
+    <p>TrustLens gives guidance, not guarantees. If money has left your account, call your bank first, then report at <strong>1930</strong> or cybercrime.gov.in.</p>
+  </footer>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

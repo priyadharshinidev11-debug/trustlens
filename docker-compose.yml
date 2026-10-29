@@ -1,0 +1,13 @@
+# Local PostgreSQL for development:  docker compose up -d
+# Then set DATABASE_URL=postgres://trustlens:trustlens@localhost:5432/trustlens in .env
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: trustlens
+      POSTGRES_PASSWORD: trustlens
+      POSTGRES_DB: trustlens
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+volumes:
+  pgdata:

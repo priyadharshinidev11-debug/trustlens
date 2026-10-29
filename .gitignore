@@ -1,0 +1,22 @@
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Database files
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
